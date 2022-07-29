@@ -7,7 +7,7 @@ def getconnection(database, host, port, user, password):
     conn = None
     try:
         conn = pg.connect(database=database, host=host, port=port,
-                          user=user, password=password, ssl=True)
+                          user=user, password=password)
 
         print("Connection to redshift made successfully...")
     except Exception as err:
